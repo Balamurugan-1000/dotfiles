@@ -1,0 +1,21 @@
+[user]
+	name = balamurugan-testpress
+	email = balamurugan@testpress.in
+[core]
+	editor = nvim
+	pager = delta
+[pager]
+	blame = bat
+[delta]
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+	syntax-theme = Dracula
+	plus-style = "syntax #0f2f1f"
+	minus-style = "syntax #2f1f1f"
+	minus-emph-style = "bold syntax #4f2f2f"
+	plus-emph-style = "bold syntax #144f2f"
+	hunk-header-style = "bold #4ea1ff"
+	file-style = "bold #82aaff"
+[interactive]
+	diffFilter = delta --color-only

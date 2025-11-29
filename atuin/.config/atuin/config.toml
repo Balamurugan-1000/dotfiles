@@ -1,0 +1,49 @@
+############################
+# 🔥 Atuin — Clean Config  #
+############################
+
+# Auto-sync with Atuin cloud
+auto_sync = true
+
+# Sync server
+sync_address = "https://api.atuin.sh"
+sync_frequency = "10m"
+
+# UI layout
+style = "compact"
+inline_height = 0
+show_preview = true
+invert = false    # search bar at bottom (more natural)
+
+# Searching
+search_mode = "fuzzy"
+filter_mode = "global"
+enter_accept = true
+history_format = "{time}  {command}"
+
+# Improve remote host behavior
+filter_mode_shell_up_key_binding = "global"
+search_mode_shell_up_key_binding = "fuzzy"
+
+# Key behavior
+word_jump_mode = "emacs"
+scroll_context_lines = 1
+show_numeric_shortcuts = true
+
+# Timezone & display
+timezone = "local"
+
+# History behavior
+secrets_filter = true
+workspaces = false
+command_chaining = false
+
+# Stats
+[stats]
+common_subcommands = ["git", "cargo", "npm", "docker", "kubectl", "tmux"]
+ignored_commands = ["cd", "ls", "vi", "nvim"]
+
+# Sync v2 (faster)
+[sync]
+records = true
+

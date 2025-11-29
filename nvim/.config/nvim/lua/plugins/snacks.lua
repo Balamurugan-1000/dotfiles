@@ -22,7 +22,16 @@ return {
  explorer = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      backend = "telescope", -- 👈 USE TELESCOPE UI
+      sources = {
+        explorer = {
+          hidden = true, -- 👈 show hidden dotfiles
+          ignored = true, -- 👈 show .gitignored files
+        },
+      },
+    },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
