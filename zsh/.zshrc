@@ -27,6 +27,8 @@ alias cat='bat'
 alias runhttps='python manage.py runserver_plus --cert-file cert.crt'
 alias gs='git status'
 alias cgrep='grep --color=always'
+alias lg='lazygit'
+alias vi="nvim"
 
 ### === Neovim Profiles === ###
 alias chad='NVIM_APPNAME="chad" nvim'
