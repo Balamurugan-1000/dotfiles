@@ -1,0 +1,59 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      "cmd-shift-t": "workspace::NewCenterTerminal",
+      "ctrl-shift-t": "workspace::NewCenterTerminal",
+    },
+  },
+
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-k": "workspace::ActivateNextPane",
+    },
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-l": "workspace::ActivateNextPane",
+      "space e": "workspace::ToggleLeftDock",
+    },
+  },
+
+  {
+    "context": "ProjectPanel && vim_mode == normal",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "shift a": "project_panel::NewDirectory",
+      "d": "project_panel::Delete",
+      "r": "project_panel::Rename",
+      "y": "workspace::CopyPath",
+      "enter": "project_panel::Open",
+    },
+  },
+
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "space e": "workspace::ToggleLeftDock",
+    },
+  },
+
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+      "j j": "vim::NormalBefore",
+    },
+  },
+]
