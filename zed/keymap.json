@@ -16,6 +16,7 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-k": "workspace::ActivateNextPane",
+      "ctrl-s": ["terminal::SendKeystroke", "ctrl-s"],
     },
   },
   {
@@ -46,6 +47,7 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
       "space e": "workspace::ToggleLeftDock",
+      "ctrl-a": "editor::SelectAll",
     },
   },
 
@@ -57,3 +59,4 @@
     },
   },
 ]
+
